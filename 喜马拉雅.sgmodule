@@ -5,5 +5,5 @@
 hostname = 113.96.156.178, *.ximalaya.com
 
 [Script]
-Rewrite: 喜马拉雅 = type=http-request,pattern=^https?:\/\/.*\/mobile\-user\/(v1\/)?homePage\/.*,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.cookie.js
-Tasks: 喜马拉雅 = type=cron,cronexp=4 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.js,wake-system=true
+xmlacookie.js = type=http-request,pattern=^https?:\/\/.*\/mobile\-user\/(v1\/)?homePage\/.*,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.cookie.js
+xmla.js= type=cron,cronexp=4 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.js,wake-system=true
