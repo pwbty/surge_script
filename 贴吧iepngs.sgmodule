@@ -1,0 +1,11 @@
+#!name=贴吧iepngs模块
+#!desc=Surge贴吧iepngs模块，包括获取Cookie
+
+[MITM]
+tieba.baidu.com
+
+[Script]
+Rewrite: 贴吧cookie = type=http-request,pattern=^https?:\/\/tieba.baidu\.com\/mg\/o\/userpost,script-path=https://raw.githubusercontent.com/iepngs/Script/master/tieba/index.js
+#http-request ^https?:\/\/tieba.baidu\.com\/mg\/o\/userpost script-path=https://raw.githubusercontent.com/iepngs/Script/master/tieba/index.js,requires-body=true,timeout=30,tag=贴吧
+Tasks: 百度贴吧 = type=cron,cronexp=1 0 * * *,script-path=https://raw.githubusercontent.com/iepngs/Script/master/tieba/index.js,wake-system=true
+#cron "10 9 * * *" script-path=https://raw.githubusercontent.com/iepngs/Script/master/tieba/index.js,tag=贴吧

@@ -1,0 +1,8 @@
+#!name=叮咚chavyleung
+#!desc=Surge叮咚模块，包括获取Cookie
+[MITM]
+maicai.api.ddxq.mobi
+
+[Script]
+Rewrite: 叮咚买菜 = type=http-request,pattern=^https:\/\/maicai.api.ddxq.mobi\/point\/home,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/mcdd/mcdd.cookie.js
+Tasks: 叮咚买菜 = type=cron,cronexp=7 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/mcdd/mcdd.js,wake-system=true
