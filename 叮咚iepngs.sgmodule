@@ -1,7 +1,7 @@
 #!name=叮咚iepngs模块
 #!desc=Surge叮咚模块，包括获取Cookie
 [MITM]
-maicai.api.ddxq.mobi
+hostname = maicai.api.ddxq.mobi
 
 [Script]
 # 1.签到

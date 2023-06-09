@@ -2,7 +2,7 @@
 #!desc=Surge美团外卖模块，包括获取Cookie
 
 [MITM]
-promotion.waimai.meituan.com
+hostname = promotion.waimai.meituan.com
 
 [Script]
 # 注意获取Cookie有两条脚本
